@@ -1,9 +1,9 @@
-# lazy mode: the current line should finish? (double check later)
+# lazy mode: the current line should not finish? (double check later)
 
 in=$(cat <<EOF
 sleep 1; echo 4; echo 5
-echo 1; false; echo 2; echo 3
-echo 1
+echo 1; echo 2; echo 3; false; echo 6; echo 7
+echo 8
 EOF
 )
 
