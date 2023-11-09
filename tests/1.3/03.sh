@@ -1,8 +1,8 @@
 # eager mode: existing commands can finish, no new commands on any line
 
 in=$(cat <<EOF
-echo 5; sleep 1; echo 2
-echo 1; echo 2; echo 3; echo 4; false; echo 5
+echo 5; sleep 6; echo 2
+echo 1; echo 2; echo 3; echo 4; sleep 3; false; echo 5
 echo 5
 EOF
 )

@@ -1,10 +1,10 @@
 # job limit should be respected
 
 in=$(cat <<EOF
-sleep 1; echo 1
-sleep 2; echo 3
-sleep 3; echo 4
-sleep 4; echo 5
+sleep 3; echo 1
+sleep 6; echo 3
+sleep 9; echo 4
+sleep 12; echo 5
 echo 2;
 EOF
 )
