@@ -10,7 +10,7 @@ expected="2
 2
 $(yes "1" | head -"$((nproc-1))")"
 
-out=$($pars -J $nproc <<<"$in")
+out=$("$pars" -J $nproc <<<"$in")
 
 if diff -q <(echo "$expected") <(echo "$out") >/dev/null 2>&1; then
 	echo -e "$0 \033[0;32m passed\033[0;0m"

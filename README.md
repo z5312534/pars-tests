@@ -22,7 +22,7 @@ Run the `run_tests.sh` script.
 
 ### If you didn't / can't follow the recommended directory structure
 You can set the location of the `pars` executable through the `$pars` environment variable. For example, you can test the reference solution like this:
-- `pars='6991 pars' ./run_tests.sh`
+- `pars=~cs6991/bin/pars ./run_tests.sh`
 
 ## Test Output
 If a test fails it will create `.out` and `.expected` files that you can inspect in the same directory as the test that failed.

@@ -74,7 +74,7 @@ expected=$(cat <<EOF
 EOF
 )
 
-out=$($pars -J 32 <<<"$in")
+out=$("$pars" -J 32 <<<"$in")
 
 if diff -q <(echo "$expected") <(echo "$out") >/dev/null 2>&1; then
 	echo -e "$0 \033[0;32m passed\033[0;0m"
